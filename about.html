@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<<<<<<< HEAD
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About TourManila</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="brand">TourManila</a>
+            
+            <!-- Hamburger Menu Button -->
+            <button class="hamburger" aria-label="Menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            
+            <!-- Navigation Menu -->
+            <nav>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="attractions.html" class="nav-link">Attractions</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="container about-section">
+            <div class="about-content">
+                <h2>About Our Tour Guide Service</h2>
+                <div class="content-section">
+                    <div class="about-image">
+                        <img src="img/manila-city-view.jpg" alt="Manila city view">
+                    </div>
+                    <div class="about-text">
+                        <p>We provide the best virtual tours of Manila's top attractions. Our mission is to showcase the beauty and culture of the Philippines' capital city.</p>
+                        <p>Founded in 2023, our team of local experts brings you authentic experiences from the heart of Manila.</p>
+                        <div class="features">
+                            <div class="feature-item">
+                                <i class="fas fa-map-marked-alt"></i>
+                                <h3>Local Expertise</h3>
+                                <p>Our guides are Manila natives with extensive knowledge of the city's history and culture.</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-camera"></i>
+                                <h3>Virtual Tours</h3>
+                                <p>Experience Manila's landmarks through our immersive 360° virtual tours.</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-heart"></i>
+                                <h3>Passionate Team</h3>
+                                <p>We're dedicated to sharing our love for Manila with visitors from around the world.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2023 TourManila. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Hamburger Menu Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            hamburger.addEventListener('click', function() {
+                const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
+                hamburger.setAttribute('aria-expanded', !isExpanded);
+                hamburger.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+            
+            // Close menu when clicking on a nav link
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburger.setAttribute('aria-expanded', 'false');
+                    hamburger.classList.remove('active');
+                    navMenu.classList.remove('active');
+                });
+            });
+        });
+    </script>
+    
+    <script src="script.js"></script>
+=======
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About TourManila</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/theme.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+<h1>TourManila</h1>
+<nav>
+<ul>|
+<li><a href="index.html">Home</a></li>|
+<li><a href="attractions.html">Attractions</a></li>|
+<li><a href="about.html">About</a></li>|
+<li><a href="contact.html">Contact</a></li>|
+</ul>
+</nav>
+</header>
+
+<main>
+
+<section class="hero">
+<div class="container">
+<h1>About Our Tour Guide Service</h1>
+<p><strong>Welcome to Tour Manila!</strong> Our website serves as a digital guide to Manila’s most iconic attractions, offering <span class="highlight">free tourist spot recommendations</span> and <span class="highlight">virtual tours</span>.</p>
+
+<h2>Our Mission</h2>
+<p>We aim to showcase the <strong>beauty, culture, and history</strong> of Manila, helping both local and international travelers explore must-visit locations like <strong>Rizal Park, Fort Santiago, National Museum of Fine Arts, and Manila Ocean Park</strong>.</p>
+
+<h2>Who is this for?</h2>
+<p>Our platform is perfect for:</p>
+<ul>
+<li><strong>Foreign tourists & newcomers</strong> – Visitors exploring Manila for the first time.</li>
+<li><strong>Local travelers</strong> – Filipinos looking for exciting places to visit.</li>
+<li><strong>Ages 16+</strong> – Anyone interested in <strong>culture, travel, and history</strong>.</li>
+</ul>
+
+<h2>Why Choose Us?</h2>
+<p>We help visitors:</p>
+<ul>
+<li><strong>Plan their trip easily</strong> by exploring attractions online.</li>
+<li><strong>Discover hidden gems</strong> with expert recommendations.</li>
+<li><strong>Experience Manila</strong> with engaging virtual tours and travel tips.</li>
+</ul>
+
+<p>Let us be your guide to exploring the wonders of <strong>Manila!</strong> 🌍✨</p>
+<p>We provide the best virtual tours of Manila's top attractions. Our mission is to showcase the beauty and culture of the Philippines' capital city.</p>
+<p>Founded in 2025, our team of local experts brings you authentic experiences from the heart of Manila.</p>
+
+</div>
+</section>
+</main>
+
+
+
+<footer>
+<div class="container">
+<p>&copy; 2025 TourManila. All rights reserved.</p>
+</div>
+</footer>
+
+<script src="js/script.js"></script>
+>>>>>>> d715ef10764689296cf1058d689d54afcb4450bb
+</body>
+</html>

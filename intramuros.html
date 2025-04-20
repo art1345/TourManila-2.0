@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intramuros - The Historic Walled City of Manila</title>
+    <style>
+        :root {
+            --primary-color: #1e3a8a;
+            --secondary-color: #f59e0b;
+            --text-color: #333;
+            --light-bg: #f8fafc;
+            --dark-bg: #1e293b;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: #fff;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url('https://images.unsplash.com/photo-1555244162-803834f70033?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 6rem 0;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        
+        /* Content Styles */
+        .hero-image {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin: 2rem 0;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        
+        .content-section {
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background-color: var(--light-bg);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        
+        .content-section h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+        
+        .content-section p {
+            margin-bottom: 1.2rem;
+            font-size: 1.1rem;
+        }
+        
+        .content-section ul {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .content-section li {
+            margin-bottom: 0.8rem;
+        }
+        
+        /* Gallery Styles */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery img:hover {
+            transform: scale(1.03);
+        }
+        
+        /* Button Styles */
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 50px;
+            margin-top: 1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid var(--primary-color);
+        }
+        
+        .btn:hover {
+            background-color: transparent;
+            color: var(--primary-color);
+        }
+        
+        .btn-secondary {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+        }
+        
+        .btn-secondary:hover {
+            color: var(--secondary-color);
+        }
+        
+        /* Footer Styles */
+        footer {
+            background-color: var(--dark-bg);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        footer p {
+            margin-bottom: 0;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .content-section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Intramuros</h1>
+            <p>The historic walled city at the heart of Manila, preserving 400 years of Spanish colonial heritage</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content-section">
+            <h2>Discover the Walled City</h2>
+            <p>Intramuros, meaning "within the walls", is the oldest district and historic core of Manila. Built in 1571 by Spanish conquistadors, this 64-hectare fortress city was the center of political, religious, and military power during the Spanish colonial period.</p>
+            <p>Today, Intramuros stands as a living museum where visitors can walk through cobblestone streets, admire Spanish-era architecture, and experience the rich history of the Philippines.</p>
+            
+            <div class="gallery">
+                <img src="https://images.unsplash.com/photo-1581852017103-68e811240e7c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Fort Santiago">
+                <img src="https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Manila Cathedral">
+                <img src="https://images.unsplash.com/photo-1586769852044-692b6b7b9f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Calle Crisologo">
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Key Attractions</h2>
+            <ul>
+                <li><strong>Fort Santiago</strong> - The 16th-century citadel that served as military headquarters and prison (including José Rizal before his execution)</li>
+                <li><strong>Manila Cathedral</strong> - The magnificent Roman Catholic basilica with stunning stained glass and intricate architecture</li>
+                <li><strong>San Agustin Church</strong> - A UNESCO World Heritage Site and the oldest stone church in the Philippines</li>
+                <li><strong>Casa Manila</strong> - A beautifully restored Spanish colonial house museum showcasing 19th-century furnishings</li>
+                <li><strong>Baluarte de San Diego</strong> - A well-preserved circular fortification with gardens and panoramic views</li>
+                <li><strong>Plaza San Luis</strong> - A complex featuring replica Spanish-era houses with shops and restaurants</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Visitor Information</h2>
+            <p><strong>Location:</strong> Along the Pasig River in Manila, adjacent to Rizal Park</p>
+            <p><strong>Opening Hours:</strong> 8:00 AM to 6:00 PM daily (varies by attraction)</p>
+            <p><strong>Entrance Fees:</strong> 
+                <br>- Fort Santiago: 75 PHP (adults), 50 PHP (students/seniors)
+                <br>- Casa Manila: 75 PHP
+                <br>- Combined ticket (3 attractions): 200 PHP
+            </p>
+            <p><strong>Guided Tours:</strong> Available in English, Filipino, and other languages (500-1500 PHP depending on group size)</p>
+            <p><strong>Transportation:</strong> Accessible via LRT-1 (Central Terminal Station), jeepneys, taxis, and ride-hailing services</p>
+            
+            <a href="https://maps.google.com" class="btn btn-secondary">View on Map</a>
+        </div>
+
+        <div class="content-section">
+            <h2>Tips for Your Visit</h2>
+            <ul>
+                <li>Wear comfortable walking shoes as the cobblestone streets can be uneven</li>
+                <li>Bring sun protection (hat, sunscreen, umbrella) as shade is limited</li>
+                <li>Visit early morning or late afternoon to avoid the midday heat</li>
+                <li>Consider a kalesa (horse-drawn carriage) tour for a unique experience</li>
+                <li>Try local snacks like pan de sal or halo-halo at nearby cafes</li>
+                <li>Allocate at least 3-4 hours to explore the major sites</li>
+                <li>Check for cultural shows or events happening during your visit</li>
+            </ul>
+            
+            <a href="#" class="btn">Book a Guided Tour</a>
+        </div>
+
+        <div class="content-section">
+            <h2>Historical Significance</h2>
+            <p>Intramuros was designed following Spanish urban planning standards with a grid pattern of streets centered around a main plaza. The massive stone walls (up to 22 feet thick in places) were constructed to protect against foreign invasions and natural disasters.</p>
+            <p>During World War II, much of Intramuros was destroyed in the Battle of Manila. Restoration efforts began in the 1950s and continue today, with many original structures carefully reconstructed using historical documents and photographs.</p>
+            <p>The site has been nominated for inclusion in the UNESCO World Heritage List as part of the "Spanish Colonial Fortifications of the Philippines" series.</p>
+        </div>
+
+        <a href="index.html" class="btn">← Back to All Attractions</a>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Manila Tourism. All rights reserved.</p>
+            <p>Contact: info@manilatourism.com | +63 2 123 4567</p>
+        </div>
+    </footer>
+</body>
+</html>

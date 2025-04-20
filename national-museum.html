@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Museum of the Philippines - Cultural Treasure</title>
+    <style>
+            :root {
+                        --primary-color: #1e3a8a;
+                        --secondary-color: #f59e0b;
+                        --text-color: #333;
+                        --light-bg: #f8fafc;
+                        --dark-bg: #1e293b;
+                    }
+                    
+                    * {
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                    }
+                    
+                    body {
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        line-height: 1.7;
+                        color: var(--text-color);
+                        background-color: #fff;
+                    }
+                    
+                    .container {
+                        max-width: 1200px;
+                        margin: 0 auto;
+                        padding: 0 20px;
+                    }
+                    
+                    /* Header Styles */
+                    header {
+                        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                                    url('https://images.unsplash.com/photo-1555244162-803834f70033?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+                        background-size: cover;
+                        background-position: center;
+                        color: white;
+                        padding: 6rem 0;
+                        text-align: center;
+                        margin-bottom: 3rem;
+                    }
+                    
+                    header h1 {
+                        font-size: 3.5rem;
+                        margin-bottom: 1rem;
+                        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                    }
+                    
+                    header p {
+                        font-size: 1.2rem;
+                        max-width: 800px;
+                        margin: 0 auto;
+                        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+                    }
+                    
+                    /* Content Styles */
+                    .hero-image {
+                        width: 100%;
+                        height: 500px;
+                        object-fit: cover;
+                        border-radius: 8px;
+                        margin: 2rem 0;
+                        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+                    }
+                    
+                    .content-section {
+                        margin-bottom: 3rem;
+                        padding: 2rem;
+                        background-color: var(--light-bg);
+                        border-radius: 8px;
+                        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+                    }
+                    
+                    .content-section h2 {
+                        color: var(--primary-color);
+                        margin-bottom: 1.5rem;
+                        font-size: 2rem;
+                        border-bottom: 3px solid var(--secondary-color);
+                        padding-bottom: 0.5rem;
+                        display: inline-block;
+                    }
+                    
+                    .content-section p {
+                        margin-bottom: 1.2rem;
+                        font-size: 1.1rem;
+                    }
+                    
+                    .content-section ul {
+                        margin-left: 2rem;
+                        margin-bottom: 1.5rem;
+                    }
+                    
+                    .content-section li {
+                        margin-bottom: 0.8rem;
+                    }
+                    
+                    /* Gallery Styles */
+                    .gallery {
+                        display: grid;
+                        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                        gap: 1.5rem;
+                        margin: 2rem 0;
+                    }
+                    
+                    .gallery img {
+                        width: 100%;
+                        height: 250px;
+                        object-fit: cover;
+                        border-radius: 8px;
+                        transition: transform 0.3s ease;
+                    }
+                    
+                    .gallery img:hover {
+                        transform: scale(1.03);
+                    }
+                    
+                    /* Button Styles */
+                    .btn {
+                        display: inline-block;
+                        background-color: var(--primary-color);
+                        color: white;
+                        padding: 12px 24px;
+                        text-decoration: none;
+                        border-radius: 50px;
+                        margin-top: 1rem;
+                        font-weight: 600;
+                        transition: all 0.3s ease;
+                        border: 2px solid var(--primary-color);
+                    }
+                    
+                    .btn:hover {
+                        background-color: transparent;
+                        color: var(--primary-color);
+                    }
+                    
+                    .btn-secondary {
+                        background-color: var(--secondary-color);
+                        border-color: var(--secondary-color);
+                    }
+                    
+                    .btn-secondary:hover {
+                        color: var(--secondary-color);
+                    }
+                    
+                    /* Footer Styles */
+                    footer {
+                        background-color: var(--dark-bg);
+                        color: white;
+                        text-align: center;
+                        padding: 2rem 0;
+                        margin-top: 3rem;
+                    }
+                    
+                    footer p {
+                        margin-bottom: 0;
+                    }
+                    
+                    /* Responsive Design */
+                    @media (max-width: 768px) {
+                        header h1 {
+                            font-size: 2.5rem;
+                        }
+                        
+                        .content-section {
+                            padding: 1.5rem;
+                        }
+                    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>National Museum</h1>
+            <p>Discover the rich cultural heritage and artistic treasures of the Philippines</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content-section">
+            <h2>About the National Museum</h2>
+            <p>The National Museum of the Philippines is the official repository of the country's natural and cultural heritage. Housed in several neoclassical buildings near Rizal Park, the museum complex features extensive collections spanning archaeology, anthropology, fine arts, and natural history.</p>
+            <p>The main National Museum of Fine Arts building was originally designed as the Old Legislative Building in 1926 and is itself a National Cultural Treasure.</p>
+            
+            <div class="gallery">
+                <img src="https://images.unsplash.com/photo-1586769852044-692b6b7b9f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Museum Building">
+                <img src="https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Spoliarium Painting">
+                <img src="https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Ethnographic Exhibits">
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Museum Complex</h2>
+            <ul>
+                <li><strong>National Museum of Fine Arts</strong> - Houses iconic works like Juan Luna's Spoliarium</li>
+                <li><strong>National Museum of Anthropology</strong> - Showcases Philippine ethnography and archaeology</li>
+                <li><strong>National Museum of Natural History</strong> - Features biodiversity and geological exhibits</li>
+                <li><strong>National Planetarium</strong> - Astronomy and space science presentations</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Visitor Information</h2>
+            <p><strong>Location:</strong> Padre Burgos Avenue, Rizal Park, Manila</p>
+            <p><strong>Opening Hours:</strong> Tuesday-Sunday, 9:00 AM to 6:00 PM (Closed Mondays)</p>
+            <p><strong>Entrance Fees:</strong> FREE for all visitors (as of 2023)</p>
+            <p><strong>Guided Tours:</strong> Available at scheduled times (check website)</p>
+            <p><strong>Photography:</strong> Allowed without flash (some restrictions may apply)</p>
+            
+            <a href="https://maps.google.com" class="btn btn-secondary">View on Map</a>
+        </div>
+
+        <div class="content-section">
+            <h2>Must-See Exhibits</h2>
+            <ul>
+                <li>Juan Luna's "Spoliarium" (1884) - The most famous Philippine painting</li>
+                <li>The San Diego Archaeological Collection - Artifacts from a 17th-century shipwreck</li>
+                <li>The Tabon Man Exhibit - Earliest human remains found in the Philippines</li>
+                <li>Contemporary Philippine Art Galleries</li>
+                <li>The Tree of Life - Stunning architectural centerpiece of Natural History museum</li>
+            </ul>
+            
+            <a href="#" class="btn">View Current Exhibitions</a>
+        </div>
+
+        <a href="index.html" class="btn">← Back to All Attractions</a>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Manila Tourism. All rights reserved.</p>
+            <p>Contact: info@manilatourism.com | +63 2 123 4567</p>
+        </div>
+    </footer>
+</body>
+</html>

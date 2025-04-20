@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<<<<<<< HEAD
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>TourManila - Attractions</title>
+    <meta name="description" content="Discover the best attractions in Manila with TourManila">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery.css">
+   
+</head>
+<body class="attractions-page">
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="brand">TourManila</a>
+            
+            <button class="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="main-navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            
+            <nav id="main-navigation" aria-label="Main navigation">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="attractions.html" class="nav-link" aria-current="page">Attractions</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="attractions" class="attractions-section">
+            <div class="container">
+                <h1>Featured Locations</h1>
+        
+                <div class="slider-container">
+                    <div class="slider" aria-live="polite">
+                        <!-- Slides will be added by JavaScript -->
+                    </div>
+                    <button class="slider-btn prev" aria-label="Previous slide">
+                        <i class="fas fa-chevron-left" aria-hidden="true"></i>
+                    </button>
+                    <button class="slider-btn next" aria-label="Next slide">
+                        <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img id="modal-image" src="" alt="" class="modal-main-image">
+                        <button class="modal-close" aria-label="Close modal">
+                            <i class="fas fa-times" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h2 id="modal-title"></h2>
+                        <p id="modal-description" class="modal-description"></p>
+                        <div class="modal-info-section">
+                            <div class="location-info">
+                                <h3><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Location</h3>
+                                <p id="modal-location" class="location-text"></p>
+                            </div>
+                            <div class="guide-info">
+                                <h3><i class="fas fa-info-circle" aria-hidden="true"></i> Visitor Guide</h3>
+                                <p id="modal-guide" class="guide-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       
+            <div class="image-gallery" aria-labelledby="gallery-heading">
+                <h2 id="gallery-heading">More Views</h2>
+                <div class="gallery-container" role="list">
+                    <!-- Gallery images will be added by JavaScript -->
+                </div>
+            </div>
+        </section>
+        
+        <section id="comments" class="comments-section">
+            <div class="container">
+                <h2 class="section-title">Visitor Comments</h2>
+                <div class="comments-content">
+                    <div class="comment-form">
+                        <h3>Share Your Experience</h3>
+                        <form id="commentForm">
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="comment">Comment:</label>
+                                <textarea id="comment" name="comment" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Submit Comment</button>
+                        </form>
+                    </div>
+                    <div class="comment-list">
+                        <h3>Recent Comments</h3>
+                        <div class="comments-container" id="commentsContainer">
+                            <div class="comment">
+                                <div class="comment-avatar">J</div>
+                                <div class="comment-content">
+                                    <p class="comment-author">Juan Dela Cruz</p>
+                                    <p class="comment-date">April 15, 2025</p>
+                                    <p class="comment-text">I loved visiting Intramuros! The history and architecture were amazing.</p>
+                                </div>
+                            </div>
+                            <div class="comment">
+                                <div class="comment-avatar">M</div>
+                                <div class="comment-content">
+                                    <p class="comment-author">Maria Santos</p>
+                                    <p class="comment-date">April 10, 2025</p>
+                                    <p class="comment-text">The food tour was the highlight of our trip. Highly recommended!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 TourManila. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Hamburger Menu Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            hamburger.addEventListener('click', function() {
+                const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
+                hamburger.setAttribute('aria-expanded', !isExpanded);
+                hamburger.classList.toggle('active');
+                navMenu.classList.toggle('active');
+                
+                document.body.style.overflow = isExpanded ? 'auto' : 'hidden';
+            });
+            
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburger.setAttribute('aria-expanded', 'false');
+                    hamburger.classList.remove('active');
+                    navMenu.classList.remove('active');
+                    document.body.style.overflow = 'auto';
+                });
+            });
+
+            // Comment Form Functionality
+            const commentForm = document.getElementById('commentForm');
+            const commentsContainer = document.getElementById('commentsContainer');
+            
+            // Load comments from localStorage when page loads
+            function loadComments() {
+                const savedComments = JSON.parse(localStorage.getItem('tourManilaComments')) || [];
+                // Clear existing comments (except the first two sample ones)
+                while (commentsContainer.children.length > 2) {
+                    commentsContainer.removeChild(commentsContainer.lastChild);
+                }
+                // Add saved comments
+                savedComments.forEach(comment => {
+                    addCommentToPage(comment.name, comment.text, comment.date);
+                });
+            }
+            
+            // Add a comment to the page
+            function addCommentToPage(name, text, date) {
+                const commentElement = document.createElement('div');
+                commentElement.className = 'comment';
+                commentElement.innerHTML = `
+                    <div class="comment-avatar">${name.charAt(0).toUpperCase()}</div>
+                    <div class="comment-content">
+                        <p class="comment-author">${name}</p>
+                        <p class="comment-date">${date}</p>
+                        <p class="comment-text">${text}</p>
+                    </div>
+                `;
+                commentsContainer.insertBefore(commentElement, commentsContainer.children[2]);
+            }
+            
+            // Save comments to localStorage
+            function saveComment(name, text) {
+                const date = new Date().toLocaleDateString('en-US', { 
+                    year: 'numeric', 
+                    month: 'long', 
+                    day: 'numeric' 
+                });
+                const comment = { name, text, date };
+                const savedComments = JSON.parse(localStorage.getItem('tourManilaComments')) || [];
+                savedComments.unshift(comment); // Add new comment to beginning
+                localStorage.setItem('tourManilaComments', JSON.stringify(savedComments));
+                return date;
+            }
+            
+            // Handle form submission
+            if (commentForm) {
+                commentForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const name = document.getElementById('name').value.trim();
+                    const email = document.getElementById('email').value.trim();
+                    const text = document.getElementById('comment').value.trim();
+                    
+                    if (name && email && text) {
+                        const date = saveComment(name, text);
+                        addCommentToPage(name, text, date);
+                        commentForm.reset();
+                        alert('Thank you for your comment!');
+                    } else {
+                        alert('Please fill in all fields!');
+                    }
+                });
+            }
+            
+            // Load any saved comments when page loads
+            loadComments();
+        });
+    </script>
+    
+    <script src="js/script.js"></script>
+=======
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>TourManila</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/theme.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/gallery.css">
+</head>
+<body class="attractions-page">
+<header>
+<h1>TourManila</h1>
+<nav>
+<ul>|
+<li><a href="index.html">Home</a></li>|
+<li><a href="attractions.html">Attractions</a></li>|
+<li><a href="about.html">About</a></li>|
+<li><a href="contact.html">Contact</a></li>|
+</ul>
+</nav>
+</header>
+
+<main>
+<section id="attractions" class="attractions-section">
+<div class="container">
+<h2>Featured Locations</h2>
+
+<div class="slider-container">
+<div class="slider">
+<!-- Slides will be added by JavaScript -->
+</div>
+<button class="slider-btn prev">
+<i class="fas fa-chevron-left"></i>
+</button>
+<button class="slider-btn next">
+<i class="fas fa-chevron-right"></i>
+</button>
+</div>
+</div>
+
+<!-- Modal -->
+<div class="modal">
+<div class="modal-content">
+<div class="modal-header">
+<img id="modal-image" src="" alt="">
+<button class="modal-close">
+<i class="fas fa-times"></i>
+</button>
+</div>
+<div class="modal-body">
+<h2 id="modal-title"></h2>
+<p id="modal-description"></p>
+<div class="location-info">
+<i class="fas fa-map-marker-alt"></i>
+<span id="modal-location"></span>
+</div>
+</div>
+</div>
+</div>
+
+<div class="image-gallery">
+<h3>More Views</h3>
+<div class="gallery-container"></div>
+</div>
+
+</section>
+
+<section id="contact" class="contact-section">
+<div class="container">
+<h2>Contact Us</h2>
+<p>Email: info@tourmanila.com</p>
+<p>Phone: (123) 456-7890</p>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container">
+<p>&copy; 2025 TourManila. All rights reserved.</p>
+</div>
+</footer>
+
+<script src="js/script.js"></script>
+>>>>>>> d715ef10764689296cf1058d689d54afcb4450bb
+</body>
+</html>
